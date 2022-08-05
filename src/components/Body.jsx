@@ -10,10 +10,10 @@ function Body() {
           <div className="top-[30%] left-[3%] absolute text-left items-stretch bg-grey-lighter min-h-screen">
           <div className='flex'>
           <div className='text-7xl font-bold text-orange-400'>
-            <AnimatedText text="I build things for" time={9}/>
+            <AnimatedText text="I build things for" time={12}/>
             </div>      
             <div className='text-7xl font-bold text-gray-600'>
-            <AnimatedText text="&nbsp;EVERYTHING." time={9}/>            
+            <AnimatedText text="&nbsp;EVERYTHING." time={12}/>            
             </div>
             </div>  
           <br></br>
@@ -21,7 +21,7 @@ function Body() {
           <AnimatedText text="Hands-on and comprehensive knowledge of platform development enterprise architecture
           ,Quick Learner agile methodologies and web-based applications. Innovative change with a
           unique mix of high-level of technology in every direction and deep technical expertise.I can 
-          adapt to any field whichever possible." time={9.5}/>  
+          adapt to any field whichever possible." time={12.5}/>  
           </div>
     
           <button class="relative inline-flex items-center justify-center p-0.5 mt-5 mb-2 mr-2 overflow-hidden text-sm font-semibold text-pink-600 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
