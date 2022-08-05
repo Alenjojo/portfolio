@@ -75,12 +75,40 @@ function Experience() {
       <div className="text-pink-600 font-bold text-5xl flex justify-center">
         Where i've worked
       </div>
-      {/* Items */}
-      <div className="flex">
-        {/* Title */}
-        <div>Simba Developers</div>
-        {/* Details */}
-        <div></div>
+
+      {/* Item */}
+      <div className="flex justify-center mt-6">
+        {/* Left col */}
+        <div className="flex justify-center mr-[10%]">
+          {/* Icon */}
+          <motion.div
+            className="box"
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.5,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+          ></motion.div>
+          <div className="flex-col mx-5">
+            {/* Title */}
+            <div className="text-pink-600 font-semibold text-xl ">
+              Simba Developers
+            </div>
+            {/* Position */}
+            <div>Developer Intern and Cloud Engineer</div>
+          </div>
+        </div>
+        {/* Right Col */}
+        <div className="card">
+          <div className="font-semibold text-pink-600">
+            July 2020 - July 2021
+          </div>
+          <p className="flex align-middle justify-start">
+            👉Developed a social media app using Flutter and GCP <br></br>
+          </p>
+        </div>
       </div>
     </div>
   );
