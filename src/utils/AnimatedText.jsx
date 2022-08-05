@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
-function AnimatedText({ text, time }) {
+function AnimatedText({ data, time, comp }) {
   const [isAnimate, setanimate] = useState(false);
   const [counter, setCounter] = useState(time);
   const container = {
@@ -33,7 +33,7 @@ function AnimatedText({ text, time }) {
       {isAnimate && (
         <motion.ul variants={container} initial="hidden" animate="show">
           <motion.li variants={item} transition={{ duration: 0.5 }}>
-            {text}
+            {data}
           </motion.li>
         </motion.ul>
       )}
