@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./LoadingBar.css";
+import "./styles/LoadingBar.css";
 
 function LoadingBar() {
   const [isAnimate, setanimate] = useState(true);
