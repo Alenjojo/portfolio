@@ -14,9 +14,16 @@ function AnimatedRoutes() {
   return (
     <AnimatePresence>
       <LoadingBar />
-      <NavBar />
       <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<Body />} />
+        <Route
+          path="/"
+          element={
+            <>
+              <NavBar />
+              <Body />
+            </>
+          }
+        />
         <Route path="/a" element={<About />} />
         <Route path="/e" element={<Experience />} />
         <Route path="/p" element={<Project />} />
