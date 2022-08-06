@@ -15,7 +15,7 @@ function Body() {
           <div className="font-bold text-orange-400 lg:text-7xl md:text-5xl sm:text-4xl ssm:text-4xl">
             <AnimatedText data="I build things for" time={11} />
           </div>
-          <div className="font-bold text-gray-600 lg:text-7xl md:text-5xl sm:text-4xl ssm:text-4xl ssm:break-normal">
+          <div className="font-bold text-transparent bg-gradient-to-r bg-clip-text from-green-400 to-blue-700 lg:text-7xl md:text-5xl sm:text-4xl ssm:text-4xl ssm:break-normal">
             <AnimatedText data="&nbsp;EVERY THING." time={11} />
           </div>
         </div>
