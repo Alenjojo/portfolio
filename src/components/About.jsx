@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useRef, useImperativeHandle, forwardRef } from "react";
 
-function About() {
+// function About({ ref }) {
+const About = forwardRef((props, ref) => {
+  const compRef = useRef();
+  useImperativeHandle(ref, () => ({
+    scrollIntoView: () => {
+      compRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    },
+  }));
   return (
-    <div className="h-screen flex-col relative">
+    <div className="h-screen flex-col relative" ref={compRef}>
       <div className="flex">
         {/* Left Col */}
         <div className="w-min ml-[10%] sssm:ml-[25%]">
@@ -75,6 +82,6 @@ function About() {
       </div>
     </div>
   );
-}
+});
 
 export default About;

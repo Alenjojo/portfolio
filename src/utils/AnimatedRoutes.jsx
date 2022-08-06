@@ -1,5 +1,5 @@
 // Configure all the routes in this file
-import React from "react";
+import React, { useRef } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Body from "../components/Body";
 import Experience from "../components/Experience";
@@ -11,6 +11,7 @@ import LoadingBar from "../components/LoadingBar";
 
 function AnimatedRoutes() {
   const location = useLocation();
+  const ref = useRef(null);
   return (
     <AnimatePresence>
       <LoadingBar />
@@ -20,11 +21,11 @@ function AnimatedRoutes() {
           element={
             <>
               <div className="h-screen flex-col relative">
-                <NavBar />
+                <NavBar refToLastComp={ref} />
                 <Body />
               </div>
               <div>
-                <About />
+                <About ref={ref} />
               </div>
             </>
           }
