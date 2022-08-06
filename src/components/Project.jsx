@@ -71,18 +71,18 @@ function Project() {
         </Link>
       </div>
 
-      <div className="text-gray-600 font-bold text-5xl flex justify-center">
+      <div className="text-gray-600 font-bold text-5xl flex justify-center lg:text-5xl sm:text-4xl ssm:text-2xl">
         Somethings i've Build
       </div>
 
       {/* Item */}
       <div className="flex justify-center align-middle mt-6">
         {/* Left col */}
-        <div className="flex justify-center align-middle mr-[10%]">
+        <div className="flex justify-center align-middle mr-[5%]">
           {/* Icon */}
           <div className="flex-col mx-5">
             {/* Title */}
-            <div className="text-gray-600 font-bold text-3xl ">
+            <div className="text-gray-600 font-bold text-2xl ">
               Covid-19 data tracker
             </div>
             {/* Description */}
@@ -101,7 +101,7 @@ function Project() {
           </div>
         </div>
         {/* Right Col */}
-        <div className="proj-card">
+        <div className="proj-card mr-2">
           <img
             src={require("../files/resources/img_proj_covid.png")}
             alt="barcode"

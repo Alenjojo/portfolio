@@ -72,12 +72,12 @@ function Experience() {
         </Link>
       </div>
 
-      <div className="text-pink-600 font-bold text-5xl flex justify-center">
+      <div className="text-pink-600 font-bold flex justify-center lg:text-5xl sm:text-4xl ssm:text-2xl">
         Where i've worked
       </div>
 
       {/* Item */}
-      <div className="flex justify-center mt-6">
+      <div className="flex justify-center mt-6 sm:m-5 ">
         {/* Left col */}
         <div className="flex justify-center mr-[10%]">
           {/* Icon */}
@@ -93,7 +93,7 @@ function Experience() {
           ></motion.div>
           <div className="flex-col mx-5">
             {/* Title */}
-            <div className="text-pink-600 font-semibold text-xl ">
+            <div className="text-pink-600 font-semibold text-lg ">
               Simba Developers
             </div>
             {/* Position */}
