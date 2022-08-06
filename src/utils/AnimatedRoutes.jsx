@@ -19,9 +19,12 @@ function AnimatedRoutes() {
           path="/"
           element={
             <>
-              <div className="h-screen">
+              <div className="h-screen flex-col relative">
                 <NavBar />
                 <Body />
+              </div>
+              <div>
+                <About />
               </div>
             </>
           }
