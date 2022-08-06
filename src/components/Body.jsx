@@ -10,17 +10,17 @@ function Body() {
       animate={{ opacity: "100%" }}
       exit={{ opacity: 0 }}
     >
-      <div className="top-[30%] left-[3%] absolute text-left items-stretch bg-grey-lighter min-h-screen">
+      <div className="top-[30%] left-[3%] absolute text-left items-stretch bg-grey-lighter">
         <div className="flex">
-          <div className="text-7xl font-bold text-orange-400">
+          <div className="font-bold text-orange-400 lg:text-7xl md:text-5xl sm:text-4xl ssm:text-4xl">
             <AnimatedText data="I build things for" time={11} />
           </div>
-          <div className="text-7xl font-bold text-gray-600">
-            <AnimatedText data="&nbsp;EVERYTHING." time={11} />
+          <div className="font-bold text-gray-600 lg:text-7xl md:text-5xl sm:text-4xl ssm:text-4xl ssm:break-normal">
+            <AnimatedText data="&nbsp;EVERY THING." time={11} />
           </div>
         </div>
         <br></br>
-        <div className="w-[55%] font-semibold text-lg text-gray-700">
+        <div className="text-lg text-gray-700 lg:w-[55%] md:w-[80%] sm:w-[90%] ssm:break-words">
           <AnimatedText
             data="Hands-on and comprehensive knowledge of platform development enterprise architecture
           ,Quick Learner agile methodologies and web-based applications. Innovative change with a
