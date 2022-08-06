@@ -4,7 +4,7 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
-      screens: { ssm: { max: "640px" } },
+      screens: { ssm: { max: "640px" }, sssm: { max: "400px" } },
     },
   },
   plugins: [],
