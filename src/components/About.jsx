@@ -10,10 +10,10 @@ const About = forwardRef((props, ref) => {
   }));
   return (
     <div className="h-screen flex-col relative" ref={compRef}>
-      <div className="flex">
+      <div className="ssm:flex-col sm:flex">
         {/* Left Col */}
-        <div className="w-min ml-[10%] sssm:ml-[25%]">
-          <div className="text-orange-400 tracking-widest flex-col w-fit -z-1 sm:mt-[-30%] sssm:mt-[50%] lg:text-2xl ssm:text-base">
+        <div className="w-min ml-[10%] ssm:ml-[25%]">
+          <div className="text-orange-400 tracking-widest flex-col w-fit -z-1 sm:mt-[-30%] lg:text-2xl ssm:text-base">
             <a href="mailto:alen@alenjojo.com">alen@alenjojo.com</a>
             {/* Barcode */}
             <img
@@ -25,8 +25,10 @@ const About = forwardRef((props, ref) => {
         </div>
         {/* Right Col */}
         <div className="flex-col mt-[5%] mx-[10%]">
-          <div className="font-bold text-orange-400 text-4xl">About Me</div>
-          <div className="mt-5 text-lg  lg:w-[80%] ssm:w-[90] break-words">
+          <div className="font-bold text-orange-400 sm:text-4xl ssm:text-3xl sssm:2xl">
+            About Me
+          </div>
+          <div className="mt-5 sm:text-lg ssm:text-base  lg:w-[80%] ssm:w-[90] break-words">
             My interest in web development started back in 2012 when I decided
             to try editing custom Tumblr themes — turns out hacking together a
             custom reblog button taught me a lot about HTML and CSS!I wish to
@@ -44,9 +46,9 @@ const About = forwardRef((props, ref) => {
         </div>
       </div>
       {/* Bottom Barcode */}
-      <div className="flex justify-around absolute bottom-0 w-[100%]">
+      <div className="flex justify-around absolute bottom-0 w-[100%] align-bottom sm:hidden ssm:hidden md:flex">
         {/* Barcode */}
-        <div className="text-3xl text-pink-600 font-semibold tracking-widest w-fit">
+        <div className="text-3xl text-pink-600 font-semibold tracking-widest w-fit ">
           <div className="flex justify-between items-center">
             Experience
             <div class="h-0 w-0 border-x-8 border-x-transparent border-b-[10px] border-b-pink-600 rotate-180 rounded-md" />
@@ -54,7 +56,7 @@ const About = forwardRef((props, ref) => {
           <img
             src={require("../files/resources/xp_barcode.png")}
             alt="barcode"
-            className="h-8 w-fit"
+            className="h-8"
           />
         </div>
         <div className="text-3xl text-gray-600 font-semibold tracking-widest w-fit">
@@ -65,7 +67,7 @@ const About = forwardRef((props, ref) => {
           <img
             src={require("../files/resources/proj_barcode.png")}
             alt="barcode"
-            className="h-8 w-fit"
+            className="h-8 ssm:w-24"
           />
         </div>
         <div className="text-3xl text-black-600 font-semibold tracking-widest w-fit">
@@ -76,7 +78,7 @@ const About = forwardRef((props, ref) => {
           <img
             src={require("../files/resources/cont_barcode.png")}
             alt="barcode"
-            className="h-8 w-fit"
+            className="h-8 ssm:w-24"
           />
         </div>
       </div>
