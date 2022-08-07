@@ -117,3 +117,13 @@ html,
     background-position: 4000px 0;
   }
 }
+@media screen and (max-width: 600px) {
+  @keyframes movebar {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 1500px 0;
+    }
+  }
+}
