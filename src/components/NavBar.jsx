@@ -24,6 +24,7 @@ function NavBar({ refToLastComp }) {
 
   const scrolltoLast = () => {
     if (refToLastComp.current) {
+      showSidebar();
       refToLastComp.current.scrollIntoView();
     }
   };
@@ -45,7 +46,7 @@ function NavBar({ refToLastComp }) {
             onClick={showSidebar}
             data-collapse-toggle="mobile-menu"
             type="button"
-            class="inline-flex justify-center items-center ml-3 text-gray-400 rounded-lg md:hidden hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 dark:text-gray-400 dark:hover:text-white dark:focus:ring-gray-500"
+            class="inline-flex justify-center items-center mr-8 text-gray-400 rounded-lg md:hidden hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 dark:text-gray-400 dark:hover:text-white dark:focus:ring-gray-500"
             aria-controls="mobile-menu-2"
             aria-expanded="false"
           >
@@ -113,7 +114,7 @@ function NavBar({ refToLastComp }) {
         class={
           sidebar
             ? "sm:w-[35%] ssm:w-[50%] sssm:w-[65%] h-screen top-0 absolute right-0 md:hidden transition duration-100"
-            : "sm:w-[35%] ssm:w-[50%] sssm:w-[65%] h-screen top-0 absolute right-0 md:hidden transition duration-700 left-[100%]"
+            : "sm:w-[35%] ssm:w-[50%] sssm:w-[65%] h-screen top-0 absolute right-0 md:hidden transition-all duration-700 left-[100%]"
         }
         aria-label="Sidebar"
       >
