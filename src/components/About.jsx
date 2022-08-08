@@ -13,7 +13,7 @@ const About = forwardRef((props, ref) => {
       <div className="ssm:flex-col sm:flex">
         {/* Left Col */}
         <div className="w-min ml-[10%] ssm:ml-[25%]">
-          <div className="text-orange-400 tracking-widest flex-col w-fit -z-1 sm:mt-[-30%] lg:text-2xl ssm:text-base">
+          <div className="text-orange-400 tracking-widest flex-col w-fit -z-1 sm:mt-[-30%] ssm:mt-[80%] lg:text-2xl">
             <a href="mailto:alen@alenjojo.com">alen@alenjojo.com</a>
             {/* Barcode */}
             <img

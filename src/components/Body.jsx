@@ -10,7 +10,7 @@ function Body() {
       animate={{ opacity: "100%" }}
       exit={{ opacity: 0 }}
     >
-      <div className="left-[3%] absolute text-left items-stretch bg-grey-lighter h-fit ssm:top-[15%] sm:top-[30%]">
+      <div className="left-[3%] -z-10 absolute text-left items-stretch bg-grey-lighter h-fit ssm:top-[15%] sm:top-[30%]">
         <div className="sssm:flex-col md:flex">
           <div className="font-bold text-orange-400 lg:text-7xl md:text-5xl sm:text-5xl ssm:text-5xl">
             <AnimatedText data="I build things for" time={11} />

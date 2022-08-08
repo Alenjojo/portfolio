@@ -1,9 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import AnimatedText from "../utils/AnimatedText";
 import { motion } from "framer-motion";
 
+const draw = {
+  hidden: { pathLength: 0, opacity: 0 },
+  visible: (i) => {
+    const delay = i * 0.8;
+    return {
+      pathLength: 1,
+      opacity: 1,
+      transition: {
+        pathLength: { delay, type: "spring", duration: 1, bounce: 0 },
+        opacity: { delay, duration: 0.01 },
+      },
+    };
+  },
+};
+
 function NavBar({ refToLastComp }) {
+  const [sidebar, setSidebar] = useState(false);
+  const showSidebar = () => setSidebar(!sidebar);
+
   const scrolltoLast = () => {
     if (refToLastComp.current) {
       refToLastComp.current.scrollIntoView();
@@ -14,8 +32,9 @@ function NavBar({ refToLastComp }) {
       initial={{ opacity: 0 }}
       animate={{ opacity: "100%" }}
       exit={{ opacity: 0 }}
+      className="flex-col relative"
     >
-      <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900 ">
+      <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
         <div className="container flex flex-wrap justify-between items-center mx-auto">
           <a href="/" className="flex items-center">
             <span className="self-center ml-5 text-2xl font-semibold whitespace-nowrap dark:text-white">
@@ -23,6 +42,7 @@ function NavBar({ refToLastComp }) {
             </span>
           </a>
           <button
+            onClick={showSidebar}
             data-collapse-toggle="mobile-menu"
             type="button"
             class="inline-flex justify-center items-center ml-3 text-gray-400 rounded-lg md:hidden hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 dark:text-gray-400 dark:hover:text-white dark:focus:ring-gray-500"
@@ -31,7 +51,7 @@ function NavBar({ refToLastComp }) {
           >
             <span class="sr-only">Open main menu</span>
             <svg
-              class="w-6 h-6"
+              class="w-9 h-9"
               aria-hidden="true"
               fill="currentColor"
               viewBox="0 0 20 20"
@@ -88,6 +108,88 @@ function NavBar({ refToLastComp }) {
           </div>
         </div>
       </nav>
+      {/* Mobile NavBar */}
+      <aside
+        class={
+          sidebar
+            ? "sm:w-[35%] ssm:w-[50%] sssm:w-[65%] h-screen top-0 absolute right-0 md:hidden transition duration-100"
+            : "sm:w-[35%] ssm:w-[50%] sssm:w-[65%] h-screen top-0 absolute right-0 md:hidden transition duration-700 left-[100%]"
+        }
+        aria-label="Sidebar"
+      >
+        <div class="flex overflow-y-auto py-4 px-3 bg-gray-50 rounded dark:bg-gray-800 h-screen w-full">
+          <ul class="space-y-2 w-full">
+            {/* Back Button */}
+            <div className="flex justify-end" onClick={showSidebar}>
+              <motion.svg
+                width="90"
+                height="90"
+                viewBox="0 0 600 600"
+                initial="hidden"
+                animate="visible"
+              >
+                <motion.line
+                  x1="220"
+                  y1="30"
+                  x2="360"
+                  y2="170"
+                  stroke="#FF5F7E"
+                  variants={draw}
+                  custom={0.5}
+                />
+                <motion.line
+                  x1="220"
+                  y1="170"
+                  x2="360"
+                  y2="30"
+                  stroke="#FF5F7E"
+                  variants={draw}
+                  custom={1}
+                />
+              </motion.svg>
+            </div>
+            <li className="flex justify-start align-middle h-20 w-fill">
+              <button
+                onClick={scrolltoLast}
+                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-cyan-200 dark:hover:bg-gray-700"
+              >
+                <span class="ml-3 text-lg">About</span>
+              </button>
+            </li>
+
+            <li className="flex justify-start align-middle h-20">
+              <a
+                href="/e"
+                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+              >
+                <span class="flex-1 ml-3 text-lg whitespace-nowrap">
+                  Experience
+                </span>
+              </a>
+            </li>
+            <li className="flex justify-start align-middle h-20">
+              <a
+                href="/p"
+                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+              >
+                <span class="flex-1 ml-3 text-lg whitespace-nowrap">
+                  Projects
+                </span>
+              </a>
+            </li>
+            <li className="flex justify-start align-middle h-20">
+              <a
+                href="/c"
+                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+              >
+                <span class="flex-1 ml-3 text-lg whitespace-nowrap">
+                  Contact
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
     </motion.div>
   );
 }
