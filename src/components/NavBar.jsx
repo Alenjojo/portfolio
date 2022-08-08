@@ -46,7 +46,11 @@ function NavBar({ refToLastComp }) {
             onClick={showSidebar}
             data-collapse-toggle="mobile-menu"
             type="button"
-            class="inline-flex justify-center items-center mr-8 text-gray-400 rounded-lg md:hidden hover:text-cyan-900 focus:outline-none focus:ring-2 focus:ring-blue-300 dark:text-gray-400 dark:hover:text-white dark:focus:ring-gray-500"
+            class={
+              sidebar
+                ? "hidden"
+                : "inline-flex justify-center items-center mr-8 text-gray-400 rounded-lg md:hidden hover:text-cyan-900 focus:outline-none focus:ring-2 focus:ring-blue-300 dark:text-gray-400 dark:hover:text-white dark:focus:ring-gray-500"
+            }
             aria-controls="mobile-menu-2"
             aria-expanded="false"
           >
@@ -98,7 +102,7 @@ function NavBar({ refToLastComp }) {
                       <img
                         src={require("../files/resources/icon_contact.png")}
                         alt="contact"
-                        className="w-10 h-10 bg-transparent"
+                        className="w-8 h-8 bg-transparent"
                       />
                     }
                     time={15}
@@ -118,7 +122,7 @@ function NavBar({ refToLastComp }) {
         }
         aria-label="Sidebar"
       >
-        <div class="flex overflow-y-auto py-4 px-3 bg-gray-50 rounded dark:bg-gray-800 h-screen w-full">
+        <div class="flex sticky top-0 z-50 overflow-y-auto py-4 px-3 bg-gray-50 rounded dark:bg-gray-800 h-screen w-full">
           <ul class="space-y-2 w-full">
             {/* Back Button */}
             <div className="flex justify-end" onClick={showSidebar}>
@@ -180,7 +184,7 @@ function NavBar({ refToLastComp }) {
             </li>
             <li className="flex justify-start align-middle h-20">
               <a
-                href="/c"
+                href="mailto:alen@alenjojo.com"
                 class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
               >
                 <span class="flex-1 ml-3 text-lg whitespace-nowrap">

@@ -12,15 +12,15 @@ function Body() {
     >
       <div className="left-[3%] -z-10 absolute text-left items-stretch bg-grey-lighter h-fit ssm:top-[15%] sm:top-[30%]">
         <div className="sssm:flex-col md:flex">
-          <div className="font-bold text-orange-400 lg:text-7xl md:text-5xl sm:text-5xl ssm:text-5xl">
+          <div className="font-bold text-orange-400 lg:text-7xl md:text-6xl sm:text-6xl ssm:text-6xl sssm:text-5xl">
             <AnimatedText data="I build things for" time={11} />
           </div>
-          <div className="font-bold text-transparent bg-gradient-to-r bg-clip-text from-green-400 to-blue-700 lg:text-7xl md:text-5xl sm:text-5xl ssm:text-5xl ssm:break-normal">
+          <div className="font-bold text-transparent bg-gradient-to-r bg-clip-text from-green-400 to-blue-700 lg:text-7xl md:text-6xl sm:text-6xl ssm:text-6xl sssm:text-5xl ssm:break-normal">
             <AnimatedText data="&nbsp;EVERY THING." time={11} />
           </div>
         </div>
         <br></br>
-        <div className="text-lg text-gray-700 lg:w-[55%] md:w-[70%] ssm:mt-[5%] ssm:mx-[5%] ssm:break-words">
+        <div className="text-lg text-gray-700 lg:w-[55%] md:w-[70%] ssm:mt-[5%] ssm:mx-[10%] ssm:break-words">
           <AnimatedText
             data="Hands-on and comprehensive knowledge of platform development enterprise architecture
           ,Quick Learner agile methodologies and web-based applications. Innovative change with a
