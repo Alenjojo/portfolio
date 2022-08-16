@@ -75,7 +75,93 @@ function Project() {
         Somethings i've Build
       </div>
 
-      {/* Item */}
+      {/* Project list */}
+      {/* 1 */}
+      <div className="flex justify-center align-middle mt-6">
+        {/* Left col */}
+        <div className="flex justify-center align-middle mr-[5%]">
+          {/* Icon */}
+          <div className="flex-col mx-5">
+            {/* Title */}
+            <div className="text-gray-600 font-bold text-2xl ">
+              GitHub-Stats
+            </div>
+            {/* Description */}
+            <div className="mt-3">
+              It takes in users github username and returns the current stats
+              like most <br></br> language used, projects popular with and most
+              starred and forked projects <br></br> using GitHub API.
+            </div>
+            {/* Techs used */}
+            <div className="mt-3 text-gray-600">VS Code • GitHub API</div>
+            <a
+              href="https://github.com/Alenjojo/github-stats"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src={require("../files/resources/icon_github.png")}
+                alt="barcode"
+                className="h-7 mt-6"
+              />
+            </a>
+          </div>
+        </div>
+        {/* Right Col */}
+        <div className="proj-card mr-2">
+          <a
+            href="https://github-stats-d7d4b.web.app"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src={require("../files/resources/img_proj2.png")}
+              alt="barcode"
+              className="h-[100%]"
+            />
+          </a>
+        </div>
+      </div>
+      {/* 2 */}
+      <div className="flex justify-center align-middle mt-6">
+        {/* Left Col */}
+        <div className="proj-card mr-2">
+          <img
+            src={require("../files/resources/img_proj4.png")}
+            alt="barcode"
+            className="h-[100%]"
+          />
+        </div>
+        {/* Right col */}
+        <div className="flex justify-center align-middle mr-[5%]">
+          {/* Icon */}
+          <div className="flex-col mx-5">
+            {/* Title */}
+            <div className="text-gray-600 font-bold text-2xl ">Team-Up</div>
+            {/* Description */}
+            <div className="mt-3">
+              Purpose-If a team of people want to collaborate to work on a
+              specific <br></br> project they can sign-up and plan it, real
+              times updates depending on the <br></br>project GroupChat
+              functionality
+            </div>
+            {/* Techs used */}
+            <div className="mt-3 text-gray-600">JAVA • Firebase</div>
+            <a
+              href="https://github.com/Alenjojo/Team-Up-Archived"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src={require("../files/resources/icon_github.png")}
+                alt="barcode"
+                className="h-7 mt-6"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      {/* 3 */}
       <div className="flex justify-center align-middle mt-6">
         {/* Left col */}
         <div className="flex justify-center align-middle mr-[5%]">
@@ -92,21 +178,80 @@ function Project() {
               location
             </div>
             {/* Techs used */}
-            <div className="mt-3 text-gray-600">Open Weather API • VS Code</div>
-            <img
-              src={require("../files/resources/icon_github.png")}
-              alt="barcode"
-              className="h-7 mt-6"
-            />
+            <div className="mt-3 text-gray-600">React.js</div>
+            <a
+              href="https://github.com/Alenjojo/covid-19-data-tracker"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src={require("../files/resources/icon_github.png")}
+                alt="barcode"
+                className="h-7 mt-6"
+              />
+            </a>
           </div>
         </div>
         {/* Right Col */}
         <div className="proj-card mr-2">
-          <img
-            src={require("../files/resources/img_proj_covid.png")}
-            alt="barcode"
-            className="h-[100%]"
-          />
+          <a
+            href="https://coivid-19-data-tracker.web.app"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src={require("../files/resources/img_proj1.png")}
+              alt="barcode"
+              className="h-[100%]"
+            />
+          </a>
+        </div>
+      </div>
+      {/* 4 */}
+      <div className="flex justify-center align-middle mt-6">
+        {/* Left Col */}
+        <div className="proj-card mr-2">
+          <a
+            href="https://clone-f15f1.web.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src={require("../files/resources/img_proj3.png")}
+              alt="barcode"
+              className="h-[100%]"
+            />
+          </a>
+        </div>
+        {/* Right col */}
+        <div className="flex justify-center align-middle mr-[5%]">
+          {/* Icon */}
+          <div className="flex-col mx-5">
+            {/* Title */}
+            <div className="text-gray-600 font-bold text-2xl ">
+              Amazon-Clone
+            </div>
+            {/* Description */}
+            <div className="mt-3">
+              A cloned version of amazon.com application being able to add login{" "}
+              <br></br> and add items to cart.
+            </div>
+            {/* Techs used */}
+            <div className="mt-3 text-gray-600">
+              React.js • Firebase • Stripe
+            </div>
+            <a
+              href="https://github.com/Alenjojo/amazon-clone"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src={require("../files/resources/icon_github.png")}
+                alt="barcode"
+                className="h-7 mt-6"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>
