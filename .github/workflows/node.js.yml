@@ -1,0 +1,46 @@
+name: exoleos-website CI
+ 
+
+on:
+
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+ 
+
+  workflow_dispatch:
+ 
+
+jobs:
+
+  deploy-via-sftp:
+    runs-on: ubuntu-latest
+    steps:
+
+      - uses: actions/checkout@v2
+      
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v1
+        with:
+         node-version: '16.x'
+        
+      - name: Build Project
+        run: |
+          npm install
+          npm run build --if-present
+          
+      - name: SFTP Deploy
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.1
+        with:
+          username: creator
+          server: ${{ secrets.SERVER_IP }}
+          port: 22 # default is 22
+          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+ 
+          
+          # will put all file under this path
+          local_path: './build/*'
+          # files will copy to under remote_path
+          remote_path: /var/www/html/portfolio
+          args: '-o ConnectTimeout=5'    
