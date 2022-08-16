@@ -1,4 +1,5 @@
 import React, { useRef, useImperativeHandle, forwardRef } from "react";
+import { Link } from "react-router-dom";
 
 // function About({ ref }) {
 const About = forwardRef((props, ref) => {
@@ -55,28 +56,32 @@ const About = forwardRef((props, ref) => {
       {/* Bottom Barcode */}
       <div className="flex justify-around absolute bottom-0 w-[100%] align-bottom sm:hidden ssm:hidden md:flex">
         {/* Barcode */}
-        <div className="text-3xl text-pink-600 font-semibold tracking-widest w-fit ">
-          <div className="flex justify-between items-center">
-            Experience
-            <div class="h-0 w-0 border-x-8 border-x-transparent border-b-[10px] border-b-pink-600 rotate-180 rounded-md" />
+        <Link to="/e">
+          <div className="text-3xl text-pink-600 font-semibold tracking-widest w-fit ">
+            <div className="flex justify-between items-center">
+              Experience
+              <div class="h-0 w-0 border-x-8 border-x-transparent border-b-[10px] border-b-pink-600 rotate-180 rounded-md" />
+            </div>
+            <img
+              src={require("../files/resources/xp_barcode.png")}
+              alt="barcode"
+              className="h-8"
+            />
           </div>
-          <img
-            src={require("../files/resources/xp_barcode.png")}
-            alt="barcode"
-            className="h-8"
-          />
-        </div>
-        <div className="text-3xl text-gray-600 font-semibold tracking-widest w-fit">
-          <div className="flex justify-between items-center">
-            Projects
-            <div class="h-0 w-0 border-x-8 border-x-transparent border-b-[10px] border-b-gray-600 rotate-180 rounded-md" />
+        </Link>
+        <Link to="p">
+          <div className="text-3xl text-gray-600 font-semibold tracking-widest w-fit">
+            <div className="flex justify-between items-center">
+              Projects
+              <div class="h-0 w-0 border-x-8 border-x-transparent border-b-[10px] border-b-gray-600 rotate-180 rounded-md" />
+            </div>
+            <img
+              src={require("../files/resources/proj_barcode.png")}
+              alt="barcode"
+              className="h-8 ssm:w-24"
+            />
           </div>
-          <img
-            src={require("../files/resources/proj_barcode.png")}
-            alt="barcode"
-            className="h-8 ssm:w-24"
-          />
-        </div>
+        </Link>
         <div className="text-3xl text-black-600 font-semibold tracking-widest w-fit">
           <div className="flex justify-between items-center">
             Contact
