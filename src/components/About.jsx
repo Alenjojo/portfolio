@@ -10,8 +10,8 @@ const About = forwardRef((props, ref) => {
     },
   }));
   return (
-    <div className="h-screen flex-col relative" ref={compRef}>
-      <div className="ssm:flex-col sm:flex">
+    <div className="flex-col h-screen relative" ref={compRef}>
+      <div className="ssm:flex-col sm:flex top-0">
         {/* Left Col */}
         <div className="w-min ml-[10%] ssm:ml-[25%]">
           {/* Barcode */}
@@ -54,7 +54,7 @@ const About = forwardRef((props, ref) => {
         </div>
       </div>
       {/* Bottom Barcode */}
-      <div className="flex justify-around absolute bottom-0 w-[100%] align-bottom sm:hidden ssm:hidden md:flex">
+      <div className="flex justify-around absolute items-end bottom-0 w-[100%] align-bottom sm:hidden ssm:hidden md:flex">
         {/* Barcode */}
         <Link to="/e">
           <div className="text-3xl text-pink-600 font-semibold tracking-widest w-fit ">
