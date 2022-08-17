@@ -15,9 +15,9 @@ const About = forwardRef((props, ref) => {
         {/* Left Col */}
         <div className="w-min ml-[10%] ssm:ml-[25%]">
           {/* Barcode */}
-          <div className="text-orange-400 tracking-widest flex-col w-fit -z-1 sm:mt-[-30%] lg:text-2xl">
+          <div className="text-orange-400 tracking-widest flex-col w-fit -z-1  sm:mt-[-30%] lg:text-2xl">
             <a href="mailto:alen@alenjojo.com">alen@alenjojo.com</a>
-            <div className="relative">
+            <div className="relative sssm:hidden">
               <img
                 src={require("../files/resources/about_barcode.png")}
                 alt="barcode"

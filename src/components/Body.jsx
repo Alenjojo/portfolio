@@ -20,7 +20,7 @@ function Body() {
           </div>
         </div>
         <br></br>
-        <div className="text-lg text-gray-700 lg:w-[55%] md:w-[70%] ssm:mt-[5%] ssm:mx-[10%] ssm:break-words">
+        <div className="sm:text-lg text-gray-700 lg:w-[55%] md:w-[70%] ssm:mx-[5%] ssm:break-words">
           <AnimatedText
             data="Hands-on and comprehensive knowledge of platform development enterprise architecture
           ,Quick Learner agile methodologies and web-based applications. Innovative change with a
@@ -32,7 +32,7 @@ function Body() {
         {/* Resume Button */}
         <AnimatedText
           data={
-            <button class="relative ssm:m-5 inline-flex items-center justify-center p-0.5 mt-5 mb-2 mr-2 overflow-hidden text-sm font-semibold text-pink-600 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
+            <button class="relative ssm:m-5 inline-flex items-center justify-center p-0.5 mt-2 mb-2 mr-2 overflow-hidden text-sm font-semibold text-pink-600 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
               <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
                 <a href={Pdf} target="_blank" rel="noopener noreferrer">
                   Resume

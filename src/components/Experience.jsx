@@ -80,7 +80,6 @@ function Experience() {
 
       {/* Experiences list */}
       <div className="ssm:hidden sm:hidden md:block">
-        {/* Experience List */}
         {items.map((item) => (
           <Item key={item} idx={item} />
         ))}
