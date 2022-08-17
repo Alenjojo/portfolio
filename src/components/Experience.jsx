@@ -80,188 +80,17 @@ function Experience() {
 
       {/* Experiences list */}
       <div className="ssm:hidden sm:hidden md:block">
-        {/* 4 */}
-        <div className="flex justify-center mt-6 sm:m-5 ">
-          {/* Left col */}
-          <div className="flex justify-center mr-[10%]">
-            {/* Icon */}
-            <motion.div
-              className="box"
-              initial={{ opacity: 0, scale: 0.5 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{
-                duration: 0.8,
-                delay: 0.5,
-                ease: [0, 0.71, 0.2, 1.01],
-              }}
-            ></motion.div>
-            <div className="flex-col mx-5">
-              {/* Title */}
-              <div className="text-pink-600 font-semibold text-lg ">
-                CTech Labs
-              </div>
-              {/* Position */}
-              <div>
-                Software Developer Intern
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp;
-              </div>
-            </div>
-          </div>
-          {/* Right Col */}
-          <div className="card">
-            <div className="font-semibold text-pink-600">
-              May 2022 - July 2022
-            </div>
-            <p className="flex align-middle justify-start break-normal max-w-3xl">
-              👉 Developed a dashboard using react.js to conduct the application
-              usage, daily active users, trend analysis in real time and
-              research on competitors identify target market to help them
-              optimise the software. <br></br> 👉 Collaborated with the robotics
-              team to build a fully fledged automation, which takes the data
-              given to supply current room to cut down electricity usage by
-              10-15% and room sensors. <br></br> 👉 Evaluated the team by
-              assessing their skills, strengths, opportunities which improved
-              their productivity tasks by 20% in each category. <br></br> 👉
-              Helped Improved and identified bugs, issues and outages using
-              jira, increased code management using git.
-            </p>
-          </div>
-        </div>
-        {/* 3 */}
-        <div className="flex justify-center mt-6 sm:m-5 ">
-          {/* Left col */}
-          <div className="flex justify-center mr-[10%]">
-            {/* Icon */}
-            <motion.div
-              className="box"
-              initial={{ opacity: 0, scale: 0.5 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{
-                duration: 0.8,
-                delay: 0.5,
-                ease: [0, 0.71, 0.2, 1.01],
-              }}
-            ></motion.div>
-            <div className="flex-col mx-5">
-              {/* Title */}
-              <div className="text-pink-600 font-semibold text-lg ">
-                CT University
-              </div>
-              {/* Position */}
-              <div>
-                Software Developer Intern
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp;
-              </div>
-            </div>
-          </div>
-          {/* Right Col */}
-          <div className="card">
-            <div className="font-semibold text-pink-600">
-              Nov 2021 - May 2022
-            </div>
-            <p className="flex align-middle justify-start break-normal max-w-3xl">
-              👉 Built and Maintained ERP based mobile application using Xamarin
-              Forms. Created Apis using ASP .Net Web API for the backend and
-              also SQL server for the database. <br></br> 👉 Collaborated with
-              senior management on multiple functions including customer
-              success, increased survey submission to pick out pain points.
-            </p>
-          </div>
-        </div>
-        {/* 2 */}
-        <div className="flex justify-center mt-6 sm:m-5 ">
-          {/* Left col */}
-          <div className="flex justify-center mr-[10%]">
-            {/* Icon */}
-            <motion.div
-              className="box"
-              initial={{ opacity: 0, scale: 0.5 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{
-                duration: 0.8,
-                delay: 0.5,
-                ease: [0, 0.71, 0.2, 1.01],
-              }}
-            ></motion.div>
-            <div className="flex-col mx-5">
-              {/* Title */}
-              <div className="text-pink-600 font-semibold text-lg ">
-                Blitz Jobs
-              </div>
-              {/* Position */}
-              <div>
-                Web Developer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp;
-              </div>
-            </div>
-          </div>
-          {/* Right Col */}
-          <div className="card">
-            <div className="font-semibold text-pink-600">
-              Oct 2021 - Feb 2022
-            </div>
-            <p className="flex align-middle justify-start break-normal max-w-3xl">
-              👉 Worked on Angular.js for the front end and used Spring boot as
-              the backend to create APIs. Developed an application to retrieve
-              files from Gmail using gmail API, transfer it to the storage
-              bucket
-              <br></br>
-              👉 Deployed a python worker on docker to extract the needed
-              content from it. Reviewed RabbitMQ message queue system
-            </p>
-          </div>
-        </div>
-        {/* 1 */}
-        <div className="flex justify-center mt-6 sm:m-5 ">
-          {/* Left col */}
-          <div className="flex justify-center mr-[10%]">
-            {/* Icon */}
-            <motion.div
-              className="box"
-              initial={{ opacity: 0, scale: 0.5 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{
-                duration: 0.8,
-                delay: 0.5,
-                ease: [0, 0.71, 0.2, 1.01],
-              }}
-            ></motion.div>
-            <div className="flex-col mx-5">
-              {/* Title */}
-              <div className="text-pink-600 font-semibold text-lg ">
-                Simba Developers
-              </div>
-              {/* Position */}
-              <div>Developer Intern and Cloud Engineer</div>
-            </div>
-          </div>
-          {/* Right Col */}
-          <div className="card">
-            <div className="font-semibold text-pink-600">
-              July 2020 - July 2021
-            </div>
-            <p className="flex align-middle justify-start break-normal max-w-3xl">
-              👉Developed a College app for students using Flutter and Firebase.
-              Maintained a workflow to do tasks on Front end using Flutter and
-              the back end using Firebase <br></br> 👉 Trained a team of 10 - 15
-              members on mobile app development and later got promoted to the
-              position of being a Team Leader<br></br> 👉 Worked with the Cloud
-              Team to design a database structure for a social media application
-              using MySQL. Monitored and gave tasks accordingly to increase the
-              efficiency of the cloud team.
-            </p>
-          </div>
-        </div>
+        {/* Experience List */}
+        {items.map((item) => (
+          <Item key={item} idx={item} />
+        ))}
       </div>
-      {/* Experience mobil ver */}
+      {/* Experience mobile ver */}
       <div className="ssm:flex-col md:hidden">
         <AnimateSharedLayout>
           <motion.ull layout initial={{ borderRadius: 25 }}>
             {items.map((item) => (
-              <Item key={item} idx={item} />
+              <ItemMobile key={item} idx={item} />
             ))}
           </motion.ull>
         </AnimateSharedLayout>
@@ -272,10 +101,53 @@ function Experience() {
 
 export default Experience;
 
-function Item({ idx }) {
-  console.log(idx);
-  const [isOpen, setIsOpen] = useState(false);
+const styleObj = {
+  display: "flex",
+  fontSize: "medium",
+};
 
+function Item({ idx }) {
+  return (
+    <div className="flex justify-center mt-6 sm:m-5 ">
+      {/* Left col */}
+      <div className="flex justify-center mr-[10%]">
+        {/* Icon */}
+        <motion.div
+          className="box"
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.8,
+            delay: 0.5,
+            ease: [0, 0.71, 0.2, 1.01],
+          }}
+        ></motion.div>
+        <div className="flex-col mx-5">
+          {/* Title */}
+          <div className="text-pink-600 font-semibold text-lg ">
+            {title[idx]}
+          </div>
+          {/* Position */}
+          <div>Developer Intern and Cloud Engineer</div>
+        </div>
+      </div>
+      {/* Right Col */}
+      <div className="card">
+        <div className="font-semibold text-pink-600">{date[idx]}</div>
+        <p className="flex align-middle justify-start break-normal max-w-3xl">
+          <div
+            className="text-sm flex align-middle justify-start break-normal max-w-3xl"
+            dangerouslySetInnerHTML={{ __html: desc[idx] }}
+            style={styleObj}
+          ></div>
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function ItemMobile({ idx }) {
+  const [isOpen, setIsOpen] = useState(false);
   const toggleOpen = () => setIsOpen(!isOpen);
 
   return (
@@ -302,6 +174,7 @@ function Content({ idx }) {
       <div
         className="text-sm flex align-middle justify-start break-normal max-w-3xl"
         dangerouslySetInnerHTML={{ __html: desc[idx] }}
+        style={styleObj}
       ></div>
     </motion.div>
   );
