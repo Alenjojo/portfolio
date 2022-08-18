@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./styles/Experience.css";
 import { AnimateSharedLayout, AnimatePresence } from "framer-motion";
 import { useState } from "react";
+import { useEffect } from "react";
 
 const draw = {
   hidden: { pathLength: 0, opacity: 0 },
@@ -20,6 +21,13 @@ const draw = {
 };
 
 function Experience() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <div className="flex-col">
       {/* Header */}

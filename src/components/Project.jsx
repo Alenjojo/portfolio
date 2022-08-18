@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./styles/Project.css";
 
@@ -17,6 +18,13 @@ const draw = {
   },
 };
 function Project() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <div className="flex-col">
       {/* Header */}
