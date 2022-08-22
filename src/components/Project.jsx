@@ -21,7 +21,7 @@ const draw = {
     };
   },
 };
-function Project() {
+function Project({ mobileView = false }) {
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -51,36 +51,38 @@ function Project() {
           </motion.div>
         </div>
         {/* Back Button */}
-        <Link to="/" className="p-0 mt-5">
-          <div className="">
-            <motion.svg
-              width="100"
-              height="100"
-              viewBox="0 0 600 600"
-              initial="hidden"
-              animate="visible"
-            >
-              <motion.line
-                x1="220"
-                y1="30"
-                x2="360"
-                y2="170"
-                stroke="#5B6871"
-                variants={draw}
-                custom={0.5}
-              />
-              <motion.line
-                x1="220"
-                y1="170"
-                x2="360"
-                y2="30"
-                stroke="#5B6871"
-                variants={draw}
-                custom={1}
-              />
-            </motion.svg>
-          </div>
-        </Link>
+        {mobileView ? null : (
+          <Link to="/" className="p-0 mt-5">
+            <div className="">
+              <motion.svg
+                width="100"
+                height="100"
+                viewBox="0 0 600 600"
+                initial="hidden"
+                animate="visible"
+              >
+                <motion.line
+                  x1="220"
+                  y1="30"
+                  x2="360"
+                  y2="170"
+                  stroke="#5B6871"
+                  variants={draw}
+                  custom={0.5}
+                />
+                <motion.line
+                  x1="220"
+                  y1="170"
+                  x2="360"
+                  y2="30"
+                  stroke="#5B6871"
+                  variants={draw}
+                  custom={1}
+                />
+              </motion.svg>
+            </div>
+          </Link>
+        )}
       </div>
       <div className="ssm:hidden sm:hidden md:block">
         <div className="text-gray-600 font-bold text-5xl flex justify-center lg:text-5xl sm:text-4xl ssm:text-2xl">

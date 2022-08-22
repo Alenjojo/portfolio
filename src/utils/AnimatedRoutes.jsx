@@ -28,8 +28,8 @@ function AnimatedRoutes() {
                 <About ref={ref} />
               </div>
               <div className="md:hidden sm:flex-col ssm:flex-col">
-                <Experience />
-                <Project />
+                <Experience mobileView={true} />
+                <Project mobileView={true} />
               </div>
             </>
           }

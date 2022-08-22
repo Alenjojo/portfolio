@@ -20,7 +20,7 @@ const draw = {
   },
 };
 
-function Experience() {
+function Experience({ mobileView = false }) {
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -50,36 +50,38 @@ function Experience() {
           </motion.div>
         </div>
         {/* Back Button */}
-        <Link to="/" className="p-0 mt-5">
-          <div className="">
-            <motion.svg
-              width="100"
-              height="100"
-              viewBox="0 0 600 600"
-              initial="hidden"
-              animate="visible"
-            >
-              <motion.line
-                x1="220"
-                y1="30"
-                x2="360"
-                y2="170"
-                stroke="#FF5F7E"
-                variants={draw}
-                custom={0.5}
-              />
-              <motion.line
-                x1="220"
-                y1="170"
-                x2="360"
-                y2="30"
-                stroke="#FF5F7E"
-                variants={draw}
-                custom={1}
-              />
-            </motion.svg>
-          </div>
-        </Link>
+        {mobileView ? null : (
+          <Link to="/" className="p-0 mt-5">
+            <div className="">
+              <motion.svg
+                width="100"
+                height="100"
+                viewBox="0 0 600 600"
+                initial="hidden"
+                animate="visible"
+              >
+                <motion.line
+                  x1="220"
+                  y1="30"
+                  x2="360"
+                  y2="170"
+                  stroke="#FF5F7E"
+                  variants={draw}
+                  custom={0.5}
+                />
+                <motion.line
+                  x1="220"
+                  y1="170"
+                  x2="360"
+                  y2="30"
+                  stroke="#FF5F7E"
+                  variants={draw}
+                  custom={1}
+                />
+              </motion.svg>
+            </div>
+          </Link>
+        )}
       </div>
 
       <div className="text-pink-600 font-bold flex justify-center lg:text-5xl sm:text-4xl ssm:text-2xl ssm:hidden sm:hidden md:flex">
