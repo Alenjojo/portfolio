@@ -115,9 +115,9 @@ const styleObj = {
 
 function Item({ idx }) {
   return (
-    <div className="flex justify-center mt-6 sm:m-5 ">
+    <div className="flex justify-between mt-6 sm:m-5">
       {/* Left col */}
-      <div className="flex justify-center mr-[10%]">
+      <div className="flex justify-center mr-[10%] ml-[2%]">
         {/* Icon */}
         <motion.div
           className="box"
@@ -135,11 +135,11 @@ function Item({ idx }) {
             {title[idx]}
           </div>
           {/* Position */}
-          <div>Developer Intern and Cloud Engineer</div>
+          <div>{position[idx]}</div>
         </div>
       </div>
       {/* Right Col */}
-      <div className="card">
+      <div className="card flex justify-end mr-[2%]">
         <div className="font-semibold text-pink-600">{date[idx]}</div>
         <p className="flex align-middle justify-start break-normal max-w-3xl">
           <div
@@ -189,6 +189,12 @@ function Content({ idx }) {
 
 const items = [0, 1, 2, 3];
 const title = ["CTech Labs", "CT University", "Blitz Jobs", "Simba Developers"];
+const position = [
+  "Software Developer",
+  "Software Developer Intern",
+  "Web developer",
+  "Developer Intern and Cloud Engineer",
+];
 const date = [
   "May 2022 - July 2022",
   "Nov 2021 - May 2022",
