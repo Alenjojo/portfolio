@@ -2,6 +2,10 @@ import { motion } from "framer-motion";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./styles/Project.css";
+import img1 from "../files/resources/img_proj1.png";
+import img2 from "../files/resources/img_proj2.png";
+import img3 from "../files/resources/img_proj3.png";
+import img4 from "../files/resources/img_proj4.png";
 
 const draw = {
   hidden: { pathLength: 0, opacity: 0 },
@@ -78,192 +82,189 @@ function Project() {
           </div>
         </Link>
       </div>
-
-      <div className="text-gray-600 font-bold text-5xl flex justify-center lg:text-5xl sm:text-4xl ssm:text-2xl">
-        Somethings i've Build
-      </div>
-
-      {/* Project list */}
-      {/* 1 */}
-      <div className="flex justify-center align-middle mt-6">
-        {/* Left col */}
-        <div className="flex justify-center align-middle mr-[5%]">
-          {/* Icon */}
-          <div className="flex-col mx-5">
-            {/* Title */}
-            <div className="text-gray-600 font-bold text-2xl ">
-              GitHub-Stats
-            </div>
-            {/* Description */}
-            <div className="mt-3">
-              It takes in users github username and returns the current stats
-              like most <br></br> language used, projects popular with and most
-              starred and forked projects <br></br> using GitHub API.
-            </div>
-            {/* Techs used */}
-            <div className="mt-3 text-gray-600">VS Code • GitHub API</div>
-            <a
-              href="https://github.com/Alenjojo/github-stats"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src={require("../files/resources/icon_github.png")}
-                alt="barcode"
-                className="h-7 mt-6"
-              />
-            </a>
-          </div>
+      <div className="ssm:hidden sm:hidden md:block">
+        <div className="text-gray-600 font-bold text-5xl flex justify-center lg:text-5xl sm:text-4xl ssm:text-2xl">
+          Somethings i've Build
         </div>
-        {/* Right Col */}
-        <div className="proj-card mr-2">
-          <a
-            href="https://github-stats-d7d4b.web.app"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              src={require("../files/resources/img_proj2.png")}
-              alt="barcode"
-              className="h-[100%]"
-            />
-          </a>
+        {/* Project list */}
+        <div className="ssm:hidden sm:hidden md:block">
+          {items.map((item) => (
+            <Item key={item} idx={item} />
+          ))}
         </div>
       </div>
-      {/* 2 */}
-      <div className="flex justify-center align-middle mt-6">
-        {/* Left Col */}
-        <div className="proj-card mr-2">
-          <img
-            src={require("../files/resources/img_proj4.png")}
-            alt="barcode"
-            className="h-[100%]"
-          />
-        </div>
-        {/* Right col */}
-        <div className="flex justify-center align-middle mr-[5%]">
-          {/* Icon */}
-          <div className="flex-col mx-5">
-            {/* Title */}
-            <div className="text-gray-600 font-bold text-2xl ">Team-Up</div>
-            {/* Description */}
-            <div className="mt-3">
-              Purpose-If a team of people want to collaborate to work on a
-              specific <br></br> project they can sign-up and plan it, real
-              times updates depending on the <br></br>project GroupChat
-              functionality
-            </div>
-            {/* Techs used */}
-            <div className="mt-3 text-gray-600">JAVA • Firebase</div>
-            <a
-              href="https://github.com/Alenjojo/Team-Up-Archived"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src={require("../files/resources/icon_github.png")}
-                alt="barcode"
-                className="h-7 mt-6"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-      {/* 3 */}
-      <div className="flex justify-center align-middle mt-6">
-        {/* Left col */}
-        <div className="flex justify-center align-middle mr-[5%]">
-          {/* Icon */}
-          <div className="flex-col mx-5">
-            {/* Title */}
-            <div className="text-gray-600 font-bold text-2xl ">
-              Covid-19 data tracker
-            </div>
-            {/* Description */}
-            <div className="mt-3">
-              It is used to check the current covid casese around the world and
-              look up<br></br> curent and past recordings from a particular
-              location
-            </div>
-            {/* Techs used */}
-            <div className="mt-3 text-gray-600">React.js</div>
-            <a
-              href="https://github.com/Alenjojo/covid-19-data-tracker"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src={require("../files/resources/icon_github.png")}
-                alt="barcode"
-                className="h-7 mt-6"
-              />
-            </a>
-          </div>
-        </div>
-        {/* Right Col */}
-        <div className="proj-card mr-2">
-          <a
-            href="https://coivid-19-data-tracker.web.app"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              src={require("../files/resources/img_proj1.png")}
-              alt="barcode"
-              className="h-[100%]"
-            />
-          </a>
-        </div>
-      </div>
-      {/* 4 */}
-      <div className="flex justify-center align-middle mt-6">
-        {/* Left Col */}
-        <div className="proj-card mr-2">
-          <a
-            href="https://clone-f15f1.web.app/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              src={require("../files/resources/img_proj3.png")}
-              alt="barcode"
-              className="h-[100%]"
-            />
-          </a>
-        </div>
-        {/* Right col */}
-        <div className="flex justify-center align-middle mr-[5%]">
-          {/* Icon */}
-          <div className="flex-col mx-5">
-            {/* Title */}
-            <div className="text-gray-600 font-bold text-2xl ">
-              Amazon-Clone
-            </div>
-            {/* Description */}
-            <div className="mt-3">
-              A cloned version of amazon.com application being able to add login{" "}
-              <br></br> and add items to cart.
-            </div>
-            {/* Techs used */}
-            <div className="mt-3 text-gray-600">
-              React.js • Firebase • Stripe
-            </div>
-            <a
-              href="https://github.com/Alenjojo/amazon-clone"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src={require("../files/resources/icon_github.png")}
-                alt="barcode"
-                className="h-7 mt-6"
-              />
-            </a>
-          </div>
-        </div>
+      {/* Mobile View */}
+      <div className="ssm:flex-col md:hidden">
+        {items.map((item) => (
+          <ItemMobile key={item} idx={item} />
+        ))}
       </div>
     </div>
   );
 }
 
 export default Project;
+const styleObj = {
+  display: "flex",
+  fontSize: "medium",
+};
+function Item({ idx }) {
+  return (
+    <div>
+      {idx % 2 === 0 ? (
+        <div className="flex justify-center align-middle mt-6">
+          {/* Left col */}
+          <div className="flex justify-center align-middle mr-[5%]">
+            {/* Icon */}
+            <div className="flex-col mx-5">
+              {/* Title */}
+              <div className="text-gray-600 font-bold text-2xl ">
+                {title[idx]}
+              </div>
+              {/* Description */}
+              <div className="mt-3">
+                <div
+                  className="text-sm flex align-middle justify-start break-normal max-w-3xl"
+                  dangerouslySetInnerHTML={{ __html: desc[idx] }}
+                  style={styleObj}
+                ></div>
+              </div>
+              {/* Techs used */}
+              <div className="mt-3 text-gray-600">{tools[idx]}</div>
+              <a href={github_link[idx]} target="_blank" rel="noreferrer">
+                <img
+                  src={require("../files/resources/icon_github.png")}
+                  alt="barcode"
+                  className="h-7 mt-6"
+                />
+              </a>
+            </div>
+          </div>
+          {/* Right Col */}
+          <div className="proj-card mr-2">
+            <a href={app_link[idx]} target="_blank" rel="noreferrer">
+              <img src={img_path[idx]} alt="Loading" className="h-[100%]" />
+            </a>
+          </div>
+        </div>
+      ) : (
+        <div className="flex justify-center align-middle mt-6">
+          {/* Left Col */}
+          <div className="proj-card mr-2">
+            <a href={app_link[idx]} target="_blank" rel="noreferrer">
+              <img src={img_path[idx]} alt="barcode" className="h-[100%]" />
+            </a>
+          </div>
+          {/* Right col */}
+          <div className="flex justify-center align-middle mr-[5%]">
+            {/* Icon */}
+            <div className="flex-col mx-5">
+              {/* Title */}
+              <div className="text-gray-600 font-bold text-2xl ">
+                {title[idx]}
+              </div>
+              {/* Description */}
+              <div className="mt-3">
+                <div
+                  className="text-sm flex align-middle justify-start break-normal max-w-3xl"
+                  dangerouslySetInnerHTML={{ __html: desc[idx] }}
+                  style={styleObj}
+                ></div>
+              </div>
+              {/* Techs used */}
+              <div className="mt-3 text-gray-600">{tools[idx]}</div>
+              <a href={github_link[idx]} target="_blank" rel="noreferrer">
+                <img
+                  src={require("../files/resources/icon_github.png")}
+                  alt="barcode"
+                  className="h-7 mt-6"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function ItemMobile({ idx }) {
+  return (
+    <div>
+      <div className="proj-card m-5 relative">
+        <a href={app_link[idx]} target="_blank" rel="noreferrer">
+          <img src={img_path[idx]} alt="Loading" className="h-[100%]" />
+        </a>
+        <div className="absolute bottom-0 left-0 h-14 bg-gray-300 opacity-40 w-fill flex justify-between right-0">
+          {" "}
+        </div>
+
+        <div className="absolute bottom-2 left-2 flex justify-between right-0">
+          <div>
+            <div className=" font-semibold text-lg text-gray-600">
+              {title[idx]}
+            </div>
+            <div className="text-xs">{tools[idx]}</div>
+          </div>
+          <a
+            href={github_link[idx]}
+            target="_blank"
+            rel="noreferrer"
+            className="justify-end"
+          >
+            <img
+              src={require("../files/resources/icon_github.png")}
+              alt="barcode"
+              className="h-6 mr-1"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+const items = [0, 1, 2, 3];
+const title = [
+  "GitHub Stats",
+  "Team-Up",
+  "Covid-19 data tracker",
+  "Amazon-Clone",
+];
+const tools = [
+  "VS Code • GitHub API",
+  "JAVA • Firebase",
+  "React.js",
+  "React.js • Firebase • Stripe",
+];
+const github_link = [
+  "https://github.com/Alenjojo/github-stats",
+  "https://github.com/Alenjojo/Team-Up-Archived",
+  "https://github.com/Alenjojo/covid-19-data-tracker",
+  "https://github.com/Alenjojo/amazon-clone",
+];
+
+const app_link = [
+  "https://github-stats-d7d4b.web.app",
+  null,
+  "https://coivid-19-data-tracker.web.app/",
+  "https://clone-f15f1.web.app/",
+];
+
+const img_path = [img2, img4, img1, img3];
+
+const desc = [
+  `It takes in users github username and returns the current stats
+                like most <br></br> language used, projects popular with and
+                most starred and forked projects <br></br> using GitHub API.`,
+  `Purpose-If a team of people want to collaborate to work on a
+                specific <br></br> project they can sign-up and plan it, real
+                times updates depending on the <br></br>project GroupChat
+                functionality`,
+  `It is used to check the current covid casese around the world and look up<br></br>
+curent and past recordings from a particular location`,
+  `A cloned version of amazon.com application being able to add login<br></br>
+and add items to cart.`,
+];
+
+// TODO <br> has to be changed to text break
