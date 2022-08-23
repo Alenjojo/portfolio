@@ -56,7 +56,7 @@ const About = forwardRef((props, ref) => {
       {/* Bottom Barcode */}
       <div className="flex justify-around absolute items-end bottom-0 w-[100%] align-bottom sm:hidden ssm:hidden md:flex">
         {/* Barcode */}
-        <Link to="/e">
+        <Link to="/experience">
           <div className="text-3xl text-pink-600 font-semibold tracking-widest w-fit ">
             <div className="flex justify-between items-center">
               Experience
@@ -69,7 +69,7 @@ const About = forwardRef((props, ref) => {
             />
           </div>
         </Link>
-        <Link to="p">
+        <Link to="project">
           <div className="text-3xl text-gray-600 font-semibold tracking-widest w-fit">
             <div className="flex justify-between items-center">
               Projects
