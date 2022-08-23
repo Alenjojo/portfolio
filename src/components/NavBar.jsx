@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import AnimatedText from "../utils/AnimatedText";
 import { motion } from "framer-motion";
 
@@ -79,11 +79,11 @@ function NavBar({ refToLastComp }) {
                 </button>
               </li>
               <li>
-                <NavLink to="/e">
+                <Link to="/e">
                   <div className="block py-2 pr-4 pl-3 text-fuchsia-700 font-semibold text-lg rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
                     <AnimatedText data="Experience" time={7} />
                   </div>
-                </NavLink>
+                </Link>
               </li>
               <li>
                 <Link to="/p">
