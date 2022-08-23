@@ -17,6 +17,7 @@ function AnimatedRoutes() {
       <LoadingBar />
       <Routes location={location} key={location.pathname}>
         <Route
+          exact
           path="/"
           element={
             <>
