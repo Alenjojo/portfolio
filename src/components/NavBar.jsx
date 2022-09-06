@@ -164,7 +164,7 @@ function NavBar({ refToLastComp }) {
 
             <li className="flex justify-start align-middle h-20">
               <a
-                href="/e"
+                href="/experience"
                 class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
               >
                 <span class="flex-1 ml-3 text-lg whitespace-nowrap">
@@ -174,7 +174,7 @@ function NavBar({ refToLastComp }) {
             </li>
             <li className="flex justify-start align-middle h-20">
               <a
-                href="/p"
+                href="/project"
                 class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
               >
                 <span class="flex-1 ml-3 text-lg whitespace-nowrap">
