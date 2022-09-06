@@ -20,7 +20,7 @@ function AnimatedRoutes() {
           path="/"
           element={
             <>
-              <div className="h-screen flex-col relative">
+              <div className="h-screen flex-col">
                 <NavBar refToLastComp={ref} />
                 <Body />
               </div>
