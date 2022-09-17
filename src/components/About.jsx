@@ -49,7 +49,7 @@ const About = forwardRef((props, ref) => {
             learn, up-skill, and acquire skills that can shape me as a valued
             professional in this field.<br></br>
             <br></br>
-            These are the technologies i’ve worked with
+            {/* These are the technologies i’ve worked with */}
           </div>
         </div>
       </div>
