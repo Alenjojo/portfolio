@@ -37,17 +37,19 @@ const About = forwardRef((props, ref) => {
             About Me
           </div>
           <div className="mt-5 sm:text-lg ssm:text-base  lg:w-[80%] ssm:w-[90] break-words">
-            My interest in web development started back in 2012 when I decided
-            to try editing custom Tumblr themes — turns out hacking together a
-            custom reblog button taught me a lot about HTML and CSS!I wish to
-            pursue this to evaluate my inherent abilities and potential.
+            I am so passionate about the tech world. It seems I'm capable of
+            inventing new innovation which will be useful for the future. I want
+            to expose my skills to the world and make a creative network and an
+            awesome team with the students with specific skills from all
+            backgrounds.
             <br></br>
-            <br></br>
-            Although I have accumulated a strong foundational knowledge in this
-            domain, I think the best way to move forward would be to get
-            practical working experience in an established platform. I wish to
-            learn, up-skill, and acquire skills that can shape me as a valued
-            professional in this field.<br></br>
+            <br></br>Hands-on and comprehensive knowledge of platform
+            development enterprise architecture,Quick Learner agile
+            methodologies and web-based applications.Innovative change with a
+            unique mix of high-level of technology in every direction and deep
+            technical expertise.I can adapt to any field whichever possible.As
+            from my past experience I have hurdled a lot of tasks as a team lead
+            where I had to take up a lot of responsibilities.<br></br>
             <br></br>
             {/* These are the technologies i’ve worked with */}
           </div>
