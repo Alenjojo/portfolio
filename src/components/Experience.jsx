@@ -190,21 +190,34 @@ function Content({ idx }) {
 }
 
 const items = [0, 1, 2, 3];
-const title = ["CTech Labs", "CT University", "Blitz Jobs", "Simba Developers"];
+const title = ["Foxmula", "CT University", "Blitz Jobs", "Simba Developers"];
 const position = [
+  "Java Backend Developer",
   "Software Developer",
-  "Software Developer Intern",
   "Web developer",
   "Developer Intern and Cloud Engineer",
 ];
 const date = [
-  "May 2022 - July 2022",
-  "Nov 2021 - May 2022",
+  "July 2022 - Present",
+  "Nov 2021 - July 2022",
   "Oct 2021 - Feb 2022",
   "July 2020 - July 2021",
 ];
 const desc = [
   `<p>
+              👉 Suggested the logic and designed the document to embed the
+               chat feature on the Portal using Spring boot. <br></br>👉 Updated the
+                existing entity of various models, and created new attributes 
+                to track the previous records. <br></br>👉 Reported edge cases validation 
+                issues in the production environment. <br></br>👉 Updated the unit testing
+                 of the API using the Junit Testing Framework.
+            </p>`,
+  `<p>
+              👉 Built and Maintained ERP based mobile application using Xamarin
+              Forms. Created Apis using ASP .Net Web API for the backend and
+              also SQL server for the database. <br></br> 👉 Collaborated with
+              senior management on multiple functions including customer
+              success, increased survey submission to pick out pain points.<br></br>
               👉 Developed a dashboard using react.js to conduct the application
               usage, daily active users, trend analysis in real time and
               research on competitors identify target market to help them
@@ -216,13 +229,6 @@ const desc = [
               their productivity tasks by 20% in each category. <br></br> 👉
               Helped Improved and identified bugs, issues and outages using
               jira, increased code management using git.
-            </p>`,
-  `<p>
-              👉 Built and Maintained ERP based mobile application using Xamarin
-              Forms. Created Apis using ASP .Net Web API for the backend and
-              also SQL server for the database. <br></br> 👉 Collaborated with
-              senior management on multiple functions including customer
-              success, increased survey submission to pick out pain points.
             </p>`,
   `<p>
               👉 Worked on Angular.js for the front end and used Spring boot as
