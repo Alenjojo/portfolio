@@ -198,19 +198,18 @@ const position = [
   "Developer Intern and Cloud Engineer",
 ];
 const date = [
-  "July 2022 - Present",
+  "July 2022 - Nov 2022",
   "Nov 2021 - July 2022",
-  "Oct 2021 - Feb 2022",
-  "July 2020 - July 2021",
+  "Oct 2021 - Jan 2022",
+  "July 2020 - June 2021",
 ];
 const desc = [
   `<p>
-              👉 Suggested the logic and designed the document to embed the
-               chat feature on the Portal using Spring boot. <br></br>👉 Updated the
-                existing entity of various models, and created new attributes 
-                to track the previous records. <br></br>👉 Reported edge cases validation 
-                issues in the production environment. <br></br>👉 Updated the unit testing
-                 of the API using the Junit Testing Framework.
+              👉 Responsible for creating and maintaining chat functionality in the portal using RocketChat<br></br>  
+👉 Designed and developed Restful API for different modules in the project as per the requirements using Spring-boot<br></br>
+👉 Worked as a frontend web developer and React.js based application<br></br>
+👉 Reported edge cases validation issues on the production environment.<br></br>
+👉 Update the unit testing of the API using JUNIT Testing Framework<br></br>
             </p>`,
   `<p>
               👉 Built and Maintained ERP based mobile application using Xamarin
