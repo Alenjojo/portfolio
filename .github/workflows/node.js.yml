@@ -1,4 +1,4 @@
-name: exoleos-website CI
+name: portfolio-website CI
  
 
 on:
@@ -33,7 +33,7 @@ jobs:
       - name: SFTP Deploy
         uses: wlixcc/SFTP-Deploy-Action@v1.2.1
         with:
-          username: creator
+          username: ${{ secrets.SERVER_USER }}
           server: ${{ secrets.SERVER_IP }}
           port: 22 # default is 22
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
