@@ -21,7 +21,7 @@ const About = forwardRef((props, ref) => {
               <img
                 src={require("../files/resources/about_barcode.png")}
                 alt="barcode"
-                className="h-[50%] w-fit"
+                className="w-fit"
               />
               <img
                 src={require("../files/resources/myphoto.png")}
