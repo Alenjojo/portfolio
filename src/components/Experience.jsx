@@ -189,63 +189,31 @@ function Content({ idx }) {
   );
 }
 
-const items = [0, 1, 2, 3];
-const title = ["Foxmula", "CT University", "Blitz Jobs", "Simba Developers"];
+const items = [0, 1, 2];
+const title = ["Deutsche Bank", "Webknot Technologies", "Foxmula"];
 const position = [
-  "Java Backend Developer",
-  "Software Developer",
-  "Web developer",
-  "Developer Intern and Cloud Engineer",
+  "Associate Software Engineer",
+  "Backend Developer",
+  "Java Backend Developer"
 ];
 const date = [
+  "Oct 2023 - Present",
+  "Feb 2023 - Sept 2023",
   "July 2022 - Nov 2022",
-  "Nov 2021 - July 2022",
-  "Oct 2021 - Jan 2022",
-  "July 2020 - June 2021",
 ];
 const desc = [
+  `<p>
+  ...                                                                                                                   
+  </p>`,
+  `<p>
+    👉 Designed and implemented Restful API's using Nest.js for multiple module <br></br> 
+    👉 Assumed a leadership role within a cross-functional team, overseeing project execution, coordinating team members and ensuring project goals were met on time.
+  </p>`,
   `<p>
               👉 Responsible for creating and maintaining chat functionality in the portal using RocketChat<br></br>  
 👉 Designed and developed Restful API for different modules in the project as per the requirements using Spring-boot<br></br>
 👉 Worked as a frontend web developer and React.js based application<br></br>
 👉 Reported edge cases validation issues on the production environment.<br></br>
 👉 Update the unit testing of the API using JUNIT Testing Framework<br></br>
-            </p>`,
-  `<p>
-              👉 Built and Maintained ERP based mobile application using Xamarin
-              Forms. Created Apis using ASP .Net Web API for the backend and
-              also SQL server for the database. <br></br> 👉 Collaborated with
-              senior management on multiple functions including customer
-              success, increased survey submission to pick out pain points.<br></br>
-              👉 Developed a dashboard using react.js to conduct the application
-              usage, daily active users, trend analysis in real time and
-              research on competitors identify target market to help them
-              optimise the software. <br></br> 👉 Collaborated with the robotics
-              team to build a fully fledged automation, which takes the data
-              given to supply current room to cut down electricity usage by
-              10-15% and room sensors. <br></br> 👉 Evaluated the team by
-              assessing their skills, strengths, opportunities which improved
-              their productivity tasks by 20% in each category. <br></br> 👉
-              Helped Improved and identified bugs, issues and outages using
-              jira, increased code management using git.
-            </p>`,
-  `<p>
-              👉 Worked on Angular.js for the front end and used Spring boot as
-              the backend to create APIs. Developed an application to retrieve
-              files from Gmail using gmail API, transfer it to the storage
-              bucket
-              <br></br>
-              👉 Deployed a python worker on docker to extract the needed
-              content from it. Reviewed RabbitMQ message queue system
-            </p>`,
-  `            <p>
-              👉Developed a College app for students using Flutter and Firebase.
-              Maintained a workflow to do tasks on Front end using Flutter and
-              the back end using Firebase <br></br> 👉 Trained a team of 10 - 15
-              members on mobile app development and later got promoted to the
-              position of being a Team Leader<br></br> 👉 Worked with the Cloud
-              Team to design a database structure for a social media application
-              using MySQL. Monitored and gave tasks accordingly to increase the
-              efficiency of the cloud team.
-            </p>`,
+            </p>`
 ];
