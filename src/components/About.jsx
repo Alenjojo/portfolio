@@ -23,11 +23,11 @@ const About = forwardRef((props, ref) => {
                 alt="barcode"
                 className="w-fit"
               />
-              <img
+              {/* <img
                 src={require("../files/resources/myphoto.png")}
                 alt="barcode"
                 className="w-fit absolute bottom-0"
-              />
+              /> */}
             </div>
           </div>
         </div>
